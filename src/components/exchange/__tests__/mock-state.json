@@ -1,0 +1,80 @@
+{
+  "pwa": {
+    "visible": true,
+    "online": true
+  },
+  "user": {
+    "id": "a1b2c3"
+  },
+  "rates": {
+    "watchEnabled": true,
+    "watchSymbols": [
+      "GBP",
+      "USD",
+      "EUR"
+    ],
+    "fetchWaitId": 25,
+    "fetching": false,
+    "fetchAttempt": 0,
+    "fetchError": null,
+    "loaded": true,
+    "rates": {
+      "EUR-EUR": {
+        "rate": 1,
+        "change": 0.04
+      },
+      "EUR-USD": {
+        "rate": 1.173700000067793,
+        "change": 0.04
+      },
+      "EUR-GBP": {
+        "rate": 0.8908000001077927,
+        "change": 0.04
+      },
+      "USD-EUR": {
+        "rate": 0.8520064752,
+        "change": 0.04
+      },
+      "USD-USD": {
+        "rate": 1,
+        "change": 0.04
+      },
+      "USD-GBP": {
+        "rate": 0.7589673682,
+        "change": 0.04
+      },
+      "GBP-EUR": {
+        "rate": 1.1225864390199747,
+        "change": 0.04
+      },
+      "GBP-USD": {
+        "rate": 1.3175797035538477,
+        "change": 0.04
+      },
+      "GBP-GBP": {
+        "rate": 1,
+        "change": 0.04
+      }
+    }
+  },
+  "exchange": {
+    "currencySource": "GBP",
+    "currencyDestination": "USD",
+    "amount": 0,
+    "direction": "send",
+    "pending": false
+  },
+  "accounts": {
+    "fetching": true,
+    "loaded": true,
+    "balances": {
+      "GBP": 12245,
+      "USD": 2221,
+      "EUR": 176.98
+    }
+  },
+  "_persist": {
+    "version": -1,
+    "rehydrated": true
+  }
+}

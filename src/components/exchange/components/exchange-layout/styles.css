@@ -1,0 +1,42 @@
+@import "../variables.css";
+
+.exchange_layout {
+  position: relative;
+}
+
+.exchange_form {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.exchange_section_row {
+  position: relative;
+  display: flex;
+  flex: 1 1 50%;
+  overflow: hidden;
+}
+
+/* arrow size is the hypoteneuse, therefore calculate the position from a 45,45,90 triangle */
+
+.arrow_down_bg{
+  --arrow-size: 1em;
+  &:before {
+    position: absolute;
+    top: calc(var(--arrow-size) * -0.5 * 1.414);
+    left: 50%;
+    content: '';
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    background: transparent;
+    box-shadow: 0 0 0 5000px rgba(0, 20, 100, 0.4);
+    transform: translateY(0) rotate(45deg);
+    transform-origin: 0% 0%;
+    transition: transform 1s var(--ease-out-expo);
+  }
+
+  &.hide_arrow:before {
+    transform: translateY(-0.8em) rotate(45deg);
+    transition: transform 1s var(--ease-out-expo);
+  }
+}

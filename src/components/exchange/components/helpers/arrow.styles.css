@@ -1,0 +1,53 @@
+
+@import "../variables.css";
+
+.arrow {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 1s var(--ease-out-expo);
+  }
+}
+
+
+.up {
+  padding: 0 0.3em;
+  &:before {
+    border-width: 0 0.3em 0.5em 0.3em;
+    border-color: transparent transparent white transparent;
+  }
+}
+
+
+.right{
+  padding: 0 0.5em;
+  &:before {
+    border-width: 0.3em 0 0.3em 0.5em;
+    border-color: transparent transparent transparent white;
+  }
+}
+
+.down{
+  padding: 0 0.3em;
+  &:before {
+    border-width: 0.5em 0.3em 0 0.3em;
+    border-color: white transparent transparent transparent;
+  }
+}
+
+
+.left{
+  padding: 0 0.5em;
+  &:before {
+    border-width: 0.3em 0.5em 0.3em 0;
+    border-color: transparent white transparent transparent;
+  }
+}

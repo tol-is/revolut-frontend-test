@@ -1,0 +1,34 @@
+/********************
+ *
+ * Global
+ */
+:global .slider {
+  display: flex !important;
+  flex: 1 0 100%;
+  flex-direction: column;
+}
+
+:global .slider-frame {
+  display: flex !important;
+  flex: 1 0 100%;
+  flex-direction: column;
+}
+
+:global .slider-list {
+  display: flex !important;
+  flex: 1 0 100%;
+  flex-direction: column;
+}
+
+:global .slider-slide {
+  display: flex !important;
+  height: 100% !important;
+}
+
+/********************
+ *
+ * Dot Nav
+ */
+.carousel_dot_nav {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,12 @@
+.app_bg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 20, 100, 0.4) 0%, rgba(0, 20, 100, 0) 30%),
+    radial-gradient(ellipse at center, rgba(50, 12, 249, 1) 50%, rgba(10, 76, 191, 1) 150%);
+  background-repeat: repeat;
+  user-select: none;
+  pointer-events: none;
+}

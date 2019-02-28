@@ -1,0 +1,38 @@
+
+.form_header {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 1em 5vw;
+}
+
+.form_header_column_left {
+  flex: 1 1 100%;
+}
+
+.form_header_column_center {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+.form_header_column_right {
+  flex: 1 1 100%;
+  text-align: right;
+}
+
+.form_header_rate_container {
+  padding: 0.3em 0.8em;
+  background-color: rgba(0, 20, 100, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.2em;
+}
+
+.text_button {
+  padding: 0.8em 0;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}

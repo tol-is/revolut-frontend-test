@@ -1,0 +1,15 @@
+html {
+  color: white;
+  font-weight: 300;
+  font-size: responsive 8px 18px;
+  font-family: 'Roboto', sans-serif;
+  font-range: 320px 1440px;
+}
+
+body {
+  font-size: 1.625rem;
+}
+
+small {
+  font-size: 0.8em;
+}

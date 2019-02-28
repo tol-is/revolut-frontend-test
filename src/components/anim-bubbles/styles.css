@@ -1,0 +1,40 @@
+.anim_bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:
+    url("./bubbles_bg.png");
+  background-repeat: repeat;
+  background-size: cover;
+  animation-name: bubbles_keyframes;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  will-change: background-position-y;
+}
+
+@media (orientation: portrait) {
+  @keyframes bubbles_keyframes {
+    0% {
+      background-position-y: 0%;
+    }
+
+    100% {
+      background-position-y: -100vh;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  @keyframes bubbles_keyframes {
+    0% {
+      background-position-y: 0%;
+    }
+
+    100% {
+      background-position-y: -100vw;
+    }
+  }
+}
